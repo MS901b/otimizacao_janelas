@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" title="grande" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+    <!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
+		<![endif]-->
+    <!--[if lte IE 6]>	
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
+		<![endif]-->
+
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+    <script type="text/javascript" src="scripts/rolagem.js"></script>
+
+
+    <!-- O arquivo referencias.js e curiosidades.js devem ser incluídos depois do interface -->
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/curiosidades.js"></script>
+
+    <script src="scripts/m3_geral.js" type="text/javascript"></script>
+    <script src="scripts/janelas.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/correcao_janelas_atv1.js"></script>
+    <script type="text/javascript" src="scripts/conteudo_janelas_atv1.js"></script>
+    <script type="text/javascript" src="scripts/inputs.js"></script>
+
+    <!-- arquivo de script para geogebra -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 1,
+            Parte: 5
+        };
+        var ProximaParte = 'mapa.html';
+
+        var Popups = $H({
+            link_continuar: {
+                conteudo: 'Você não pode continuar, enquanto não acertar todas as questões.',
+                layout: ['seta_baixo', 'direita'],
+                largura: 11
+            }
+        });
+    </script>
+    <title>Otimização de Janelas</title>
+</head>
+
+<body onunload="">
+    <!--
+	Nunca crie um "onload" aqui, use a Classe Event do Prototype: Event.observe(window, 'load', funcaoAqui);
+	Veja um exemplo no arquivo exemplo_correcao.js
+	-->
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <div class="numero_atividade">1</div>
+                <h1>Otimização de Janelas</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Janelas Retangulares</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a id="mapa" href="mapa.html">Mapa</a>
+                <a href="introducao.html">Introdução</a>
+                <a href="index.html">Início</a>
+            </div>
+
+            <div class="limpador"></div>
+        </div>
+        <!-- Por enquanto o controle de partes trancadas não será implementado-->
+        <ul id="partes">
+        </ul>
+
+        <div id="software">
+            <div id="conteudo">
+                <!-- SalvaLocal -->
+                <div class="salva_local"></div>
+                <div id="questoes">
+                    <div id="texto_generico">
+                        <p>A função que você encontrou na atividade anterior para descrever o comportamento da área em função da medida da base é do tipo quadrática: A(x) = -x² + 200x.</p>
+                        <p>Nesses casos, o ponto de máximo coincide com o vértice da parábola e esse pode ser calculado algebricamente, sem que seja necessário conhecer ou explorar o seu gráfico. Você saberia como? Pergunte ao seu professor.</p>
+                        <p>Note também que a figura que você obteve como sendo a de área máxima era um quadrado, ou seja, o retângulo com perímetro igual a 400 cm e com maior área possível é o quadrado com lados iguais a 100 cm.</p>
+                        <p>Na verdade, há um resultado mais geral que diz o seguinte:</p>
+                        <br />
+                        <p><em>Dentre todos os retângulos de mesmo perímetro, o quadrado é aquele que tem a maior área.</em></p>
+                        <br />
+                        <p>Para exercitar esse novo conhecimento, tente resolver a <a href="atividade2_parte1.html">Atividade 2</a>.</p>
+                    </div>
+                    <a id="link_continuar">
+                        <span class="escondido">Continuar</span>
+                    </a>
+                    <div class="limpador"></div>
+                </div>
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+    <div id="applet">
+        <div id="borda_applet" class="altura_applet_3 sem_borda sem_fundo">
+
+            <br class="limpador" />
+            <br class="limpador" />
+            <br class="limpador" />
+            <div class="imagem">
+                <img src="imgs/conclusao.jpg" />
+            </div>
+            <div class="canto sup_esq"></div>
+            <div class="canto sup_dir"></div>
+            <div class="canto inf_esq"></div>
+            <div class="canto inf_dir"></div>
+            <div id="associacao"></div>
+        </div>
+    </div>
+
+    <div id="associado"></div>
+
+    <div id="associado"></div>
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <!--
+        <a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+        <a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+        -->
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
+</html>

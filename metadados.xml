@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Otimização de Janelas</titulo>
+    <descricao>Este software ilustra um processo de otimização utilizando polinômios do segundo grau. Nele, é considerada uma situação hipotética em que o objetivo é encontrar a janela retangular que tem a maior área dentre as que tem um determinado formato e perímetro ﬁxo. As funções que descrevem estas situações são polinômios do segundo grau com domínio restrito.O caminho de investigação proposto parte da percepção visual dos valores por meio de gráﬁcos dinâmicos e induz o “modelamento” do problema por funções.</descricao>
+    <estado>finalizado</estado>
+	<imagem>janelas1a.jpg</imagem>
+	<tipo>software educacional, Animação e Simulação</tipo>
+	<objetivos>Despertar a percepção da variação de valores de uma função de uma variável;  Modelar matematicamente uma situação por meio de uma função determinando restrições de seu domínio; Investigar o comportamento de função polinomial do segundo grau – valores máximos e mínimos.</objetivos>
+	<observacoes>É necessário plugin Flash 9.0 ou mais recente e máquina Java 1.6 ou mais recente.</observacoes>
+	<nivel>Ensino Médio</nivel>
+	<componente>Matemática</componente>
+	<temas>Geometria e Medidas, Números e Funções</temas>
+	<autores>Sueli I. R. Costa</autores>
+	<palavras_chaves>Unicamp, Projeto M³, software educacional, matemática, otimização, janelas, área, perímetro, retângulo, função quadrática, parábola, vértice da parábola.</palavras_chaves>
+	<assunto>Funções: Função quadrática; Geometria: perímetro e área de ﬁguras planas.</assunto>
+</recurso>
+
+
+
