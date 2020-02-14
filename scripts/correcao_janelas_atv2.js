@@ -82,7 +82,7 @@ function corrige_q_1_a(valor) {
         if (func2 != "")
             correto2 = compararFuncao(func2, "((x/4)-2)^2");
         else correto2 = false;
-        if (correto1 == true || correto2 == true) {
+        if (correto1 == true && correto2 == true) {
             correto = true;
         } else correto = false;
     } else {
