@@ -131,20 +131,34 @@
 
     <div id="applet">
         <div id="filme" class="altura_applet_4 borda sem_fundo">
-            <object id="Areas" name="Areas" type="application/x-shockwave-flash" data="applets/Filme.swf" width="519" height="380">
-						<param name="menu" value="false" />
-						<param name="movie" value="applets/Filme.swf" />
-					</object>
-            <div class="canto sup_esq"></div>
-            <div class="canto sup_dir"></div>
-            <div class="canto inf_esq"></div>
-            <div class="canto inf_dir"></div>
-            <div id="associacao"></div>
+            <video id="filmeAnimacao" width="519" height="380">
+                <source src="applets/filme.mp4" type="video/mp4">
+                    Desculpa, mas não foi possível carregar o vídeo.
+            </video>
         </div>
+
         <div id="comandos">
-            <input type="button" class="botao botao_grande" value="Iniciar Animação" onclick="$('Areas').Inicia();" />
+            <button onclick="playPause()">Iniciar Animação</button>
         </div>
+
+        <div class="canto sup_esq"></div>
+        <div class="canto sup_dir"></div>
+        <div class="canto inf_esq"></div>
+        <div class="canto inf_dir"></div>
+        <div id="associacao"></div>
     </div>
+
+    <script>
+        var meuVideo = document.querySelector("#filmeAnimacao");
+
+        function playPause() {
+            if (meuVideo.paused)
+                meuVideo.play();
+            else
+                meuVideo.pause();
+        }
+    </script>
+
     <div id="associado"></div>
     <div id="ferramentas">
         <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
